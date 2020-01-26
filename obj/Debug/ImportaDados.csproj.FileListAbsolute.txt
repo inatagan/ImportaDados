@@ -1,0 +1,16 @@
+C:\Users\andrey\source\repos\ImportaDados\obj\Debug\ImportaDados.csprojAssemblyReference.cache
+C:\Users\andrey\source\repos\ImportaDados\obj\Debug\ImportaDados.Form1.resources
+C:\Users\andrey\source\repos\ImportaDados\obj\Debug\ImportaDados.Properties.Resources.resources
+C:\Users\andrey\source\repos\ImportaDados\obj\Debug\ImportaDados.csproj.GenerateResource.cache
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\ImportaDados.exe.config
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\ImportaDados.exe
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\ImportaDados.pdb
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\MySql.Data.dll
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\Google.Protobuf.dll
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\Renci.SshNet.dll
+C:\Users\andrey\source\repos\ImportaDados\bin\Debug\MySql.Data.xml
+C:\Users\andrey\source\repos\ImportaDados\obj\Debug\ImportaDados.csproj.CopyComplete
+C:\Users\andrey\source\repos\ImportaDados\obj\Debug\ImportaDados.exe
+C:\Users\andrey\source\repos\ImportaDados\obj\Debug\ImportaDados.pdb
