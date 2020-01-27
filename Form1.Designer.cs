@@ -58,6 +58,7 @@
             // 
             // btnImportaDados
             // 
+            this.btnImportaDados.Enabled = false;
             this.btnImportaDados.Location = new System.Drawing.Point(51, 70);
             this.btnImportaDados.Name = "btnImportaDados";
             this.btnImportaDados.Size = new System.Drawing.Size(75, 23);

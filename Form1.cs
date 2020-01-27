@@ -68,6 +68,7 @@ namespace ImportaDados
             {
                 this.caminho = fbd.SelectedPath.ToString();
                 MessageBox.Show("Diretório selecionado.");
+                btnImportaDados.Enabled = true;
             }
             else { MessageBox.Show("Selecione um diretório."); }
         }
@@ -79,10 +80,9 @@ namespace ImportaDados
                 objPassagemBll.ImportaDados(this.caminho);
                 MessageBox.Show("Dados importados com sucesso.");
             }
-            catch (Exception ex)
+            catch
             {
-
-                throw ex;
+                MessageBox.Show(objPassagemBll.Mensagem);
             }
         }
 

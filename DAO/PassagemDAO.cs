@@ -65,7 +65,7 @@ namespace ImportaDados.DAO
             }
             catch
             {
-                throw new InvalidOperationException("O banco não foi fechado ou foi excluído");
+                throw new InvalidOperationException("Oops algo inesperado aconteceu ╮(￣ω￣;)╭");
             }
             finally
             {

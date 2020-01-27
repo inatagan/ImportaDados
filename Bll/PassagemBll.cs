@@ -16,16 +16,27 @@ namespace ImportaDados.Bll
 		PassagemDAO passagemDAO = new PassagemDAO();
 		Passagem passagem = new Passagem();
 		JavaScriptSerializer serializer = new JavaScriptSerializer();
+		private string mensagem;
+
+		public string Mensagem { get => mensagem; set => mensagem = value; }
 
 		public void ImportaDados(string path)
 		{
-			string[] arquivosJson = Directory.GetFiles(path);
-			foreach (string arq in arquivosJson)
+			try
 			{
-				TextReader tr = new StreamReader(arq);
-				string linha = tr.ReadLine();
-				passagem = serializer.Deserialize<Passagem>(linha);
-				passagemDAO.Inserir(passagem);
+				string[] arquivosJson = Directory.GetFiles(path);
+				foreach (string arq in arquivosJson)
+				{
+					TextReader tr = new StreamReader(arq);
+					string linha = tr.ReadLine();
+					passagem = serializer.Deserialize<Passagem>(linha);
+					passagemDAO.Inserir(passagem);
+				}
+			}
+			catch
+			{
+				mensagem = "Não foi possivel importar os dados.";
+				throw new Exception(mensagem);
 			}
 		}
 
