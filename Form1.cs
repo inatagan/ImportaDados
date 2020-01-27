@@ -21,7 +21,6 @@ namespace ImportaDados
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            FormataGrid();
             AtualizaGrid();
         }
 
@@ -42,10 +41,9 @@ namespace ImportaDados
                 dgvDados.Columns[4].HeaderText = "Faixa";
                 dgvDados.Columns[4].Width = 90;
             }
-            catch (Exception ex)
+            catch
             {
-
-                throw ex;
+                MessageBox.Show("Não foi possível conectar ao banco de dados.");
             }
         }
         private void AtualizaGrid()
@@ -56,8 +54,7 @@ namespace ImportaDados
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                MessageBox.Show("Não foi possível conectar ao banco de dados.");
             }
         }
 

@@ -87,7 +87,7 @@
             this.Controls.Add(this.btnDir);
             this.Controls.Add(this.dgvDados);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Importa Dados";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();
             this.ResumeLayout(false);
