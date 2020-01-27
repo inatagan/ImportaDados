@@ -11,8 +11,9 @@ namespace ImportaDados.DAO
 {
     public class PassagemDAO
     {
+        //Editar a string de conexão de acordo com a configuracao do BD local usado.
         string conexao = "SERVER=localhost; DATABASE=PassagemDB; UID=root; PWD=;";
-        MySqlConnection conection = null;
+        MySqlConnection connectionString = null;
         MySqlCommand comando;
               
 
@@ -20,16 +21,15 @@ namespace ImportaDados.DAO
         {
             try
             {
-                conection = new MySqlConnection(conexao);
-                conection.Open();
+                connectionString = new MySqlConnection(conexao);
+                connectionString.Open();
                 string insertQuery = "INSERT INTO PASSAGEMDB.PASSAGEM(placa, data, hora, equipamento, faixa) VALUES('" + obj.Placa + "', '" + obj.Data + "', '" + obj.Hora + "', '" + obj.Equipamento + "', '" + obj.Faixa + "')";
-                comando = new MySqlCommand(insertQuery, conection);
+                comando = new MySqlCommand(insertQuery, connectionString);
                 comando.ExecuteNonQuery();
-                conection.Close();
+                connectionString.Close();
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
@@ -39,9 +39,9 @@ namespace ImportaDados.DAO
             try
             {
                 Model.ListaPassagem listarPassagem = new ListaPassagem();
-                conection = new MySqlConnection(conexao);
-                comando = new MySqlCommand("SELECT * FROM passagem", conection);
-                conection.Open();
+                connectionString = new MySqlConnection(conexao);
+                comando = new MySqlCommand("SELECT * FROM passagem", connectionString);
+                connectionString.Open();
                 MySqlDataReader dr = comando.ExecuteReader();
                 comando.Parameters.Clear();
                 if(dr.HasRows == true)
@@ -69,7 +69,7 @@ namespace ImportaDados.DAO
             }
             finally
             {
-                conection.Close();
+                connectionString.Close();
             }
         }
     }

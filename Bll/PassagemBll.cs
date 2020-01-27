@@ -35,7 +35,7 @@ namespace ImportaDados.Bll
 			}
 			catch
 			{
-				mensagem = "Não foi possivel importar os dados.";
+				mensagem = "Não foi possivel importar os dados. Dados duplicados.";
 				throw new Exception(mensagem);
 			}
 		}
