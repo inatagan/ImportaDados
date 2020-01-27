@@ -24,7 +24,7 @@ USE `passagemdb` ;
 DROP TABLE IF EXISTS `passagemdb`.`passagem` ;
 
 CREATE TABLE IF NOT EXISTS `passagemdb`.`passagem` (
-  `placa` VARCHAR(32) NOT NULL AUTO_INCREMENT,
+  `placa` VARCHAR(32) NOT NULL,
   `data` VARCHAR(32),
   `hora` VARCHAR(32),
   `equipamento` VARCHAR(32),
