@@ -7,6 +7,9 @@ O projeto foi escrito com C# e MySQL. A aplicação foi desenhada para ler arqui
 ---
 ### Sobre o banco de dados utilizado.
 Foi utilizado o MySQL como banco de dados, no meu caso usei o xampp para rodar um servidor local na minha maquina.
+
+Editar as configurações da string de conexão que se encontra na classe `PassagemDAO.cs` no pacote `DAO`.
+
 Rodar o script de criação do banco de dados para inicializar o banco.
 O banco é um banco simples com apenas uma tabela, para evitar possíveis complicações, como os dados não são manipulados de nenhuma forma eles foram definidos como VARCHAR.
     
